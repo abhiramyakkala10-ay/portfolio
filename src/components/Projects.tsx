@@ -69,11 +69,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     <motion.div
       ref={ref}
       id={project.id}
-      className="glass-card group relative overflow-hidden rounded-2xl p-6 sm:p-8"
+      className="glass-card group relative overflow-hidden rounded-[2rem] p-6 sm:p-8"
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.99 }}
       transition={{
-        duration: 0.7,
+        duration: 0.65,
         delay: index * 0.15,
         ease: [0.23, 1, 0.32, 1],
       }}
@@ -93,17 +95,16 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             >
               {project.subtitle}
             </span>
-            <h3 className="mt-2 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            <h3 className="mt-2 text-2xl font-bold tracking-tight text-foreground transition-transform duration-300 group-hover:scale-[1.015] sm:text-3xl">
               {project.title}
             </h3>
           </div>
-          <span className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-text-muted">
+          <span className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-text-muted transition-colors duration-300 group-hover:border-accent-cyan/30 group-hover:text-foreground">
             {project.year}
           </span>
         </div>
 
-        {/* Description */}
-        <p className="mb-6 max-w-md text-sm leading-relaxed font-light text-text-secondary">
+        <p className="mb-6 max-w-md text-sm leading-relaxed font-light text-text-secondary transition-colors duration-300 group-hover:text-foreground">
           {project.description}
         </p>
 

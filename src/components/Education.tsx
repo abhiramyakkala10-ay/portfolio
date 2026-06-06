@@ -35,7 +35,12 @@ export default function Education() {
     <section
       ref={sectionRef}
       id="education"
-      className="relative z-10 px-6 py-24 sm:px-10 sm:py-32 lg:px-16 lg:py-40 bg-white/[0.02]"
+      className="relative z-10 px-6 py-24 sm:px-10 sm:py-32 lg:px-16 lg:py-40 bg-white/[0.01]"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at top, rgba(74,214,255,0.08), transparent 30%)",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="mx-auto max-w-4xl">
         <motion.div
@@ -49,21 +54,22 @@ export default function Education() {
           </h2>
         </motion.div>
 
-        <div className="relative border-l border-white/10 ml-4 md:ml-1/2">
+        <div className="relative border-l border-accent-cyan/20 ml-4 md:ml-1/2">
           {EDUCATION.map((item, index) => {
             return (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
+                whileHover={{ scale: 1.01 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                transition={{ duration: 0.45, delay: index * 0.2, ease: [0.23, 1, 0.32, 1] }}
                 className="mb-12 ml-8 relative"
               >
                 {/* Timeline dot */}
-                <div className="absolute -left-[41px] top-1.5 h-4 w-4 rounded-full border-2 border-accent-orange bg-bg-primary" />
+                <div className="absolute -left-[41px] top-1.5 h-4 w-4 rounded-full border-2 border-accent-cyan bg-bg-primary shadow-[0_0_0_6px_rgba(74,214,255,0.06)]" />
                 
-                <div className="glass-card rounded-2xl p-6 sm:p-8">
+                <div className="glass-card rounded-[2rem] p-6 sm:p-8">
                   <span className="inline-block rounded-full bg-accent-orange/10 px-3 py-1 text-xs font-semibold text-accent-orange mb-4">
                     {item.period}
                   </span>

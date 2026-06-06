@@ -6,10 +6,12 @@ import About from "@/components/About";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import CustomCursor from "@/components/CustomCursor";
+import ParticleFlow from "@/components/ParticleFlow";
 
 export default function Home() {
   return (
     <>
+      <ParticleFlow />
       <CustomCursor />
       <Navbar />
 

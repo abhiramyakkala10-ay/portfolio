@@ -49,7 +49,7 @@ export default function About() {
         </motion.div>
 
         {/* Two column layout */}
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-20">
           {/* Left: Bio */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -59,6 +59,7 @@ export default function About() {
               delay: 0.2,
               ease: [0.23, 1, 0.32, 1],
             }}
+            className="glass-card rounded-[2rem] p-8"
           >
             <p className="text-lg font-light leading-relaxed text-text-secondary">
               Hi I am a B.Tech student at Vignan Institute in Hyderabad, I LOVE! digging into Data Science to figure out how to make everyday life run a little smoother. As a creative coder, I love building actual, real world solutions for those annoying micro problems we all deal with.
@@ -101,6 +102,7 @@ export default function About() {
               delay: 0.3,
               ease: [0.23, 1, 0.32, 1],
             }}
+            className="glass-card rounded-[2rem] p-8"
           >
             <h3 className="mb-8 text-lg font-semibold tracking-tight text-foreground">
               Core Competencies
