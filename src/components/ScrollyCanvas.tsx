@@ -158,9 +158,9 @@ export default function ScrollyCanvas() {
           }}
         />
 
-        {/* Bottom gradient fade for seamless blending */}
+        {/* Bottom gradient fade for seamless blending - reduced height */}
         <div
-          className="pointer-events-none absolute bottom-0 left-0 right-0 h-64"
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
           style={{
             background:
               "linear-gradient(to top, rgba(255, 255, 255, 1) 0%, transparent 100%)",
@@ -172,7 +172,7 @@ export default function ScrollyCanvas() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(255, 255, 255, 0.15), transparent 20%, transparent 80%, rgba(255, 255, 255, 0.15))",
+              "linear-gradient(to right, rgba(255, 255, 255, 0.08), transparent 25%, transparent 75%, rgba(255, 255, 255, 0.08))",
           }}
         />
       </div>

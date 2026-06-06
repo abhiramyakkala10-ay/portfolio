@@ -64,7 +64,7 @@ export default function Contact() {
             <motion.a
               href="/ABHIRAMYAKKALA_RESUME.pdf"
               download="ABHIRAMYAKKALA_RESUME.pdf"
-              className="group relative overflow-hidden rounded-full border border-white/10 bg-white/5 px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:border-accent-orange hover:bg-accent-orange/10 hover:text-accent-orange"
+              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange to-accent-amber px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_50px_rgba(232,115,58,0.4)]"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               aria-label="Download resume"
