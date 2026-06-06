@@ -16,19 +16,19 @@ export default function Navbar() {
   const navBg = useTransform(
     scrollYProgress,
     [0, 0.05],
-    ["rgba(10, 14, 18, 0)", "rgba(10, 14, 18, 0.85)"]
+    ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.92)"]
   );
 
   const navBlur = useTransform(
     scrollYProgress,
     [0, 0.05],
-    ["blur(0px)", "blur(20px)"]
+    ["blur(0px)", "blur(16px)"]
   );
 
   const borderOpacity = useTransform(
     scrollYProgress,
     [0, 0.05],
-    [0, 0.06]
+    [0, 0.08]
   );
 
   return (
@@ -57,8 +57,8 @@ export default function Navbar() {
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-orange to-accent-amber">
             <span className="text-xs font-black text-bg-primary">AY</span>
           </div>
-          <span className="hidden sm:inline">
-            Abhiram<span className="text-accent-orange">Yakkala</span>
+          <span className="hidden sm:inline text-white">
+            Abhiram Yakkala
           </span>
         </motion.a>
 

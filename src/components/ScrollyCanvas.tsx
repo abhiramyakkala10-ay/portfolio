@@ -154,16 +154,25 @@ export default function ScrollyCanvas() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 40%, rgba(10, 14, 18, 0.7) 100%)",
+              "radial-gradient(ellipse at center, transparent 50%, rgba(255, 255, 255, 0.4) 100%)",
           }}
         />
 
         {/* Bottom gradient fade for seamless blending */}
         <div
-          className="pointer-events-none absolute bottom-0 left-0 right-0 h-48"
+          className="pointer-events-none absolute bottom-0 left-0 right-0 h-64"
           style={{
             background:
-              "linear-gradient(to top, var(--bg-primary) 0%, transparent 100%)",
+              "linear-gradient(to top, rgba(255, 255, 255, 1) 0%, transparent 100%)",
+          }}
+        />
+
+        {/* Subtle edge fades to prevent harsh transitions */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(255, 255, 255, 0.15), transparent 20%, transparent 80%, rgba(255, 255, 255, 0.15))",
           }}
         />
       </div>

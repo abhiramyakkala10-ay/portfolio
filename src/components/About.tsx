@@ -44,7 +44,7 @@ export default function About() {
           </div>
           <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Driven by
-            <span className="text-gradient-teal ml-3">Curiosity</span>
+            <span className="text-accent-teal ml-3">Curiosity</span>
           </h2>
         </motion.div>
 
@@ -59,7 +59,6 @@ export default function About() {
               delay: 0.2,
               ease: [0.23, 1, 0.32, 1],
             }}
-            className="glass-card rounded-[2rem] p-8"
           >
             <p className="text-lg font-light leading-relaxed text-text-secondary">
               Hi I am a B.Tech student at Vignan Institute in Hyderabad, I LOVE! digging into Data Science to figure out how to make everyday life run a little smoother. As a creative coder, I love building actual, real world solutions for those annoying micro problems we all deal with.
@@ -102,7 +101,6 @@ export default function About() {
               delay: 0.3,
               ease: [0.23, 1, 0.32, 1],
             }}
-            className="glass-card rounded-[2rem] p-8"
           >
             <h3 className="mb-8 text-lg font-semibold tracking-tight text-foreground">
               Core Competencies
