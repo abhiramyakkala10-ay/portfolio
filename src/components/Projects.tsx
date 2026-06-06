@@ -72,12 +72,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       className="glass-card group relative overflow-hidden rounded-[2rem] p-6 sm:p-8"
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.99 }}
+      whileHover={{ scale: 1.03, y: -8 }}
+      whileTap={{ scale: 0.97 }}
       transition={{
-        duration: 0.65,
+        duration: 0.7,
         delay: index * 0.15,
-        ease: [0.23, 1, 0.32, 1],
+        ease: [0.34, 1.56, 0.64, 1],
       }}
     >
       {/* Background gradient */}

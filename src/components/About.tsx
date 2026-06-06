@@ -34,17 +34,17 @@ export default function About() {
           className="mb-16"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.7, ease: [0.23, 1, 0.32, 1] }}
+          transition={{ duration: 0.7, ease: [0.34, 1.56, 0.64, 1] }}
         >
           <div className="mb-4 flex items-center gap-3">
-            <div className="h-px w-12 bg-accent-teal" />
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent-teal">
+            <div className="h-px w-12 bg-accent-blue" />
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-accent-blue">
               About Me
             </span>
           </div>
           <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Driven by
-            <span className="text-accent-teal ml-3">Curiosity</span>
+            <span className="text-gradient-blue ml-3">Curiosity</span>
           </h2>
         </motion.div>
 
@@ -55,16 +55,16 @@ export default function About() {
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -40 }}
             transition={{
-              duration: 0.7,
+              duration: 0.8,
               delay: 0.2,
-              ease: [0.23, 1, 0.32, 1],
+              ease: [0.34, 1.56, 0.64, 1],
             }}
           >
             <p className="text-lg font-light leading-relaxed text-text-secondary">
-              Hi I am a B.Tech student at Vignan Institute in Hyderabad, I LOVE! digging into Data Science to figure out how to make everyday life run a little smoother. As a creative coder, I love building actual, real world solutions for those annoying micro problems we all deal with.
+              Hi I am a B.Tech student at Vignan Institute in Hyderabad, I love digging into Data Science and Machine Learning to figure out how to make everyday life run smoother. As a creative coder, I'm passionate about building real-world solutions for those annoying micro-problems we all deal with.
             </p>
             <p className="mt-6 text-lg font-light leading-relaxed text-text-secondary">
-              I thrive right where logic meets imagination, because I believe code shouldn&apos;t just work it should actually make sense to people. My interests are filmmaking, video editing, learning miscellaneous random stuff (like shuffling cards, speed reading, etc.). I&apos;m a people person, I like to give back to people, and I love giving structure to whatever it lacks.
+              I thrive where logic meets creativity, because I believe code shouldn't just work—it should make sense to people. My interests span filmmaking, video editing, and learning random skills. I'm a people-focused developer who loves giving back and bringing structure to what lacks it.
             </p>
 
             {/* Personal Details Grid */}
@@ -97,9 +97,9 @@ export default function About() {
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
             transition={{
-              duration: 0.7,
+              duration: 0.8,
               delay: 0.3,
-              ease: [0.23, 1, 0.32, 1],
+              ease: [0.34, 1.56, 0.64, 1],
             }}
           >
             <h3 className="mb-8 text-lg font-semibold tracking-tight text-foreground">
@@ -116,9 +116,9 @@ export default function About() {
                   key={group.category}
                   initial={{ opacity: 0, x: 20 }}
                   animate={skillsInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  transition={{ duration: 0.6, delay: 0.3 + i * 0.12, ease: [0.34, 1.56, 0.64, 1] }}
                 >
-                  <div className="mb-2 text-sm font-medium uppercase tracking-wider text-accent-orange">
+                  <div className="mb-2 text-sm font-medium uppercase tracking-wider text-accent-blue">
                     {group.category}
                   </div>
                   <div className="text-base font-light text-text-secondary leading-relaxed">
