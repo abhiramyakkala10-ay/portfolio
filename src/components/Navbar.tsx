@@ -16,7 +16,7 @@ export default function Navbar() {
   const navBg = useTransform(
     scrollYProgress,
     [0, 0.05],
-    ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.92)"]
+    ["rgba(8, 15, 30, 0)", "rgba(8, 15, 30, 0.86)"]
   );
 
   const navBlur = useTransform(
@@ -42,7 +42,7 @@ export default function Navbar() {
           WebkitBackdropFilter: navBlur,
           borderBottom: useTransform(
             borderOpacity,
-            (v) => `1px solid rgba(255,255,255,${v})`
+            (v) => `1px solid rgba(56, 189, 248, ${v})`
           ),
         }}
       >
@@ -54,10 +54,10 @@ export default function Navbar() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-orange to-accent-amber">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent-blue to-accent-cyan shadow-[0_0_18px_rgba(56,189,248,0.35)]">
             <span className="text-xs font-black text-bg-primary">AY</span>
           </div>
-          <span className="hidden sm:inline text-white">
+          <span className="hidden sm:inline text-white/95">
             Abhiram Yakkala
           </span>
         </motion.a>
@@ -69,7 +69,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               id={`nav-${link.label.toLowerCase()}`}
-              className="relative rounded-full px-5 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-foreground"
+              className="relative rounded-full px-5 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-accent-cyan"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -79,7 +79,7 @@ export default function Navbar() {
           <a
             href="mailto:abhiramyakkala8@gmail.com"
             id="nav-cta-hire"
-            className="ml-3 rounded-full border border-accent-orange/30 bg-accent-orange/10 px-5 py-2 text-sm font-medium text-accent-orange transition-all duration-300 hover:border-accent-orange/60 hover:bg-accent-orange/20 hover:shadow-[0_0_20px_rgba(232,115,58,0.15)]"
+            className="ml-3 rounded-full border border-accent-cyan/30 bg-gradient-to-r from-accent-blue/15 to-accent-orange/15 px-5 py-2 text-sm font-medium text-accent-cyan transition-all duration-300 hover:border-accent-orange/50 hover:bg-gradient-to-r hover:from-accent-blue/25 hover:to-accent-orange/25 hover:shadow-[0_0_20px_rgba(56,189,248,0.18)]"
           >
             Hire Me
           </a>

@@ -53,7 +53,7 @@ export default function Contact() {
             <motion.a
               href="mailto:abhiramyakkala8@gmail.com"
               id="contact-email-btn"
-              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange to-accent-amber px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_50px_rgba(232,115,58,0.4)]"
+              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange via-amber-400 to-accent-orange px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_50px_rgba(251,146,60,0.35)]"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -64,7 +64,7 @@ export default function Contact() {
             <motion.a
               href="/ABHIRAMYAKKALA_RESUME.pdf"
               download="ABHIRAMYAKKALA_RESUME.pdf"
-              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange to-accent-amber px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_50px_rgba(232,115,58,0.4)]"
+              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange via-amber-400 to-accent-orange px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_50px_rgba(251,146,60,0.35)]"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               aria-label="Download resume"
@@ -86,7 +86,7 @@ export default function Contact() {
                 key={social.label}
                 href={social.href}
                 id={`social-${social.label.toLowerCase().replace("/", "-")}`}
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/8 bg-white/[0.03] text-xs font-bold text-text-secondary transition-all duration-300 hover:border-accent-orange/40 hover:bg-accent-orange/10 hover:text-accent-orange hover:shadow-[0_0_20px_rgba(232,115,58,0.1)]"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-white/8 bg-white/[0.03] text-xs font-bold text-text-secondary transition-all duration-300 hover:border-accent-cyan/40 hover:bg-accent-blue/10 hover:text-accent-cyan hover:shadow-[0_0_20px_rgba(56,189,248,0.12)]"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label={social.label}
@@ -110,9 +110,9 @@ export default function Contact() {
             © {new Date().getFullYear()} Abhiram Yakkala. Crafted with passion.
           </p>
           <div className="flex items-center gap-3 text-xs text-text-muted">
-            <a href="mailto:abhiramyakkala8@gmail.com" className="transition-colors hover:text-accent-orange">Email</a>
+            <a href="mailto:abhiramyakkala8@gmail.com" className="transition-colors hover:text-accent-cyan">Email</a>
             <span>•</span>
-            <a href="https://www.linkedin.com/in/abhiram-yakkala-1b30753b5/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent-teal">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/abhiram-yakkala-1b30753b5/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent-cyan">LinkedIn</a>
             <span>•</span>
             <a href="https://github.com/abhiramyakkala10-ay" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent-amber">GitHub</a>
           </div>

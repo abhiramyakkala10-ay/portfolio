@@ -134,7 +134,7 @@ export default function About() {
                 Extras
               </span>
               <div className="flex flex-wrap gap-2">
-                <span className="rounded-full border border-white/8 px-3 py-1 text-xs font-medium text-text-secondary transition-all hover:border-accent-teal/30 hover:text-accent-teal">
+                <span className="rounded-full border border-white/8 px-3 py-1 text-xs font-medium text-text-secondary transition-all hover:border-accent-cyan/30 hover:text-accent-cyan">
                   NSS Volunteer
                 </span>
               </div>

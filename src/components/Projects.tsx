@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
     tags: ["Python", "AI/NLP", "Semantic Search", "Web Scraping"],
     year: "2024",
     gradient: "from-teal-500/20 via-cyan-500/10 to-transparent",
-    accentColor: "text-accent-teal",
+    accentColor: "text-accent-cyan",
   },
   {
     id: "project-3",

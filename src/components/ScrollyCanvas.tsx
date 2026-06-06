@@ -149,21 +149,21 @@ export default function ScrollyCanvas() {
           style={{ display: "block" }}
         />
 
-        {/* Vignette overlay for cinematic feel */}
+        {/* Blue-violet vignette for a cinematic glow */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 50%, rgba(255, 255, 255, 0.4) 100%)",
+              "radial-gradient(ellipse at center, transparent 35%, rgba(14, 165, 233, 0.12) 55%, rgba(8, 47, 73, 0.45) 100%)",
           }}
         />
 
-        {/* Bottom gradient fade for seamless blending - reduced height */}
+        {/* Bottom gradient fade for seamless blending */}
         <div
           className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
           style={{
             background:
-              "linear-gradient(to top, rgba(255, 255, 255, 1) 0%, transparent 100%)",
+              "linear-gradient(to top, rgba(4, 10, 18, 1) 0%, rgba(8, 47, 73, 0.45) 55%, transparent 100%)",
           }}
         />
 
@@ -172,7 +172,7 @@ export default function ScrollyCanvas() {
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(255, 255, 255, 0.08), transparent 25%, transparent 75%, rgba(255, 255, 255, 0.08))",
+              "linear-gradient(to right, rgba(14, 165, 233, 0.08), transparent 25%, transparent 75%, rgba(251, 146, 60, 0.08))",
           }}
         />
       </div>

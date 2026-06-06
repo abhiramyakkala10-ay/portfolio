@@ -97,14 +97,14 @@ export default function Overlay() {
           <div className="max-w-2xl">
             <div className="mb-4 flex items-center gap-3">
               <div className="h-px w-12 bg-accent-orange" />
-              <span className="text-xs font-medium uppercase tracking-[0.25em] text-accent-orange">
+              <span className="text-xs font-medium uppercase tracking-[0.25em] text-accent-cyan">
                 Philosophy
               </span>
             </div>
             <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               I build digital
               <br />
-              <span className="text-gradient-teal">experiences.</span>
+              <span className="text-gradient-blue">experiences.</span>
             </h2>
             <p className="mt-6 max-w-md text-base font-light leading-relaxed text-text-secondary sm:text-lg">
               From concept to code, every pixel is intentional. Every interaction
@@ -121,15 +121,15 @@ export default function Overlay() {
         >
           <div className="max-w-2xl text-right">
             <div className="mb-4 flex items-center justify-end gap-3">
-              <span className="text-xs font-medium uppercase tracking-[0.25em] text-accent-teal">
+              <span className="text-xs font-medium uppercase tracking-[0.25em] text-accent-orange">
                 Approach
               </span>
-              <div className="h-px w-12 bg-accent-teal" />
+              <div className="h-px w-12 bg-accent-orange" />
             </div>
             <h2 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               Bridging design
               <br />
-              <span className="text-gradient-orange">&amp; engineering.</span>
+              <span className="text-gradient-blue">&amp; engineering.</span>
             </h2>
             <p className="mt-6 ml-auto max-w-md text-base font-light leading-relaxed text-text-secondary sm:text-lg">
               Where aesthetic vision meets technical precision. I transform ideas
@@ -147,13 +147,13 @@ export default function Overlay() {
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Let&apos;s create something
             <br />
-            <span className="text-gradient-orange">extraordinary.</span>
+            <span className="text-gradient-blue">extraordinary.</span>
           </h2>
           <div className="pointer-events-auto mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
             <a
               href="#about"
               id="cta-view-work"
-              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange to-accent-amber px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_40px_rgba(232,115,58,0.4)]"
+              className="group relative overflow-hidden rounded-full bg-gradient-to-r from-accent-orange via-amber-400 to-accent-orange px-8 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg-primary transition-all duration-300 hover:shadow-[0_0_40px_rgba(251,146,60,0.35)]"
             >
               <span className="relative z-10">About Me</span>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-amber to-accent-orange opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -161,7 +161,7 @@ export default function Overlay() {
             <a
               href="#contact"
               id="cta-contact"
-              className="rounded-full border border-white/15 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-foreground backdrop-blur-sm transition-all duration-300 hover:border-accent-teal hover:text-accent-teal hover:shadow-[0_0_30px_rgba(45,212,191,0.15)]"
+              className="rounded-full border border-white/15 bg-white/6 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-foreground backdrop-blur-sm transition-all duration-300 hover:border-accent-cyan hover:text-accent-cyan hover:shadow-[0_0_30px_rgba(56,189,248,0.18)]"
             >
               Get in Touch
             </a>
