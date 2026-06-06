@@ -22,7 +22,7 @@ const PROJECTS: Project[] = [
     description:
       "Engineered a fully offline hardware-integrated telemetry system on ESP32 with a custom voice-synthesis engine delivering live soil diagnostics in native languages — no internet, no cloud dependency, deployable in rural field conditions.",
     tags: ["ESP32", "C/C++", "Voice Synthesis", "Hardware"],
-    year: "2024",
+    year: "2026",
     gradient: "from-orange-500/20 via-amber-500/10 to-transparent",
     accentColor: "text-accent-orange",
   },
@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     description:
       "Built an AI-driven conversational search engine that parses user intent and queries multiple vendor platforms simultaneously using semantic matching — returning ranked product results or intelligent fallbacks when exact matches fail.",
     tags: ["Python", "AI/NLP", "Semantic Search", "Web Scraping"],
-    year: "2024",
+    year: "2026",
     gradient: "from-teal-500/20 via-cyan-500/10 to-transparent",
     accentColor: "text-accent-cyan",
   },
@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
     description:
       "Shipped a centralized campus asset-tracking web app with React state management, relational DB schemas, and atomic transactions — eliminating manual item recovery processes for an active student user base.",
     tags: ["React", "Relational DB", "Node.js", "State Management"],
-    year: "2024",
+    year: "2026",
     gradient: "from-purple-500/20 via-pink-500/10 to-transparent",
     accentColor: "text-purple-400",
   },
@@ -55,7 +55,7 @@ const PROJECTS: Project[] = [
     description:
       "Building a custom e-commerce platform for a traditional household saree business, focusing on seamless user experience, inventory management, and authentic brand storytelling.",
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "E-Commerce"],
-    year: "2025",
+    year: "2026",
     gradient: "from-blue-500/20 via-indigo-500/10 to-transparent",
     accentColor: "text-blue-400",
   },
