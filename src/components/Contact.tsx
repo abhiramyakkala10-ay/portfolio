@@ -60,6 +60,18 @@ export default function Contact() {
               <span className="relative z-10">abhiramyakkala8@gmail.com</span>
               <div className="absolute inset-0 bg-gradient-to-r from-accent-amber to-accent-orange opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </motion.a>
+
+            <motion.a
+              href="/ABHIRAMYAKKALA_RESUME.pdf"
+              download="ABHIRAMYAKKALA_RESUME.pdf"
+              className="group relative overflow-hidden rounded-full border border-white/10 bg-white/5 px-10 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:border-accent-orange hover:bg-accent-orange/10 hover:text-accent-orange"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              aria-label="Download resume"
+            >
+              <span className="relative z-10">Download Resume</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-amber to-accent-orange opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </motion.a>
           </div>
 
           {/* Socials */}
